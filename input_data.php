@@ -19,5 +19,5 @@ if (empty($judul) || empty($tahun) || empty($id_penulis) || empty($nama_penulis)
     die("Semua data harus diisi.");
 }
 
-header("Location: homepage.php");
+header("Location: tabel_buku.php");
 ?>
