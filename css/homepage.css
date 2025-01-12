@@ -1,0 +1,67 @@
+/* Background styling */
+body {
+    background: linear-gradient(135deg, #865eb1, #8f808b);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+}
+
+/* Navbar styling */
+.navbar {
+    background: #5a0d99;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.navbar-brand:hover,
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* Welcome section styling */
+.welcome-section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcome-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.welcome-btn {
+    margin-top: 20px;
+}
+
+/* Ornament styling */
+.ornament {
+    margin: 40px auto;
+    width: 80px;
+    height: 4px;
+    background: #ffd700;
+    border-radius: 50px;
+}
+
+/* Card styling */
+.card {
+    background: #7e0eca;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+/* Logout button styling */
+.btn-logout {
+    background-color: #f76c6c;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-logout:hover {
+    background-color: #ff4c4c;
+}

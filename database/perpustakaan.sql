@@ -47,8 +47,8 @@ CREATE TABLE `buku` (
 --
 
 INSERT INTO `buku` (`id`, `judul`, `tahun`, `id_penulis`, `nama_penulis`, `created_by`, `created_at`, `updated_by`, `updated_at`, `deleted_by`, `deleted_at`, `isdel`) VALUES
-(1, 'ada roti ada ikan', 1999, 0, '', 2, '2024-12-09 07:39:04', 2, '2024-12-21 18:43:12', NULL, NULL, 0),
-(3, 'tampar aku', 9999, 0, '', 2, '2024-12-09 07:56:57', NULL, NULL, 2, '2024-12-21 17:47:24', 1),
+(1, 'ada roti ada ikan', 1999, 0, 'Jamal', 2, '2024-12-09 07:39:04', 2, '2024-12-21 18:43:12', NULL, NULL, 0),
+(3, 'tampar aku', 9999, 0, 'Liam Enere', 2, '2024-12-09 07:56:57', NULL, NULL, 2, '2024-12-21 17:47:24', 1),
 (4, 'aku suka ayam goreng', 13231, 0, '', 2, '2024-12-21 17:47:37', NULL, NULL, 2, '2024-12-21 17:49:13', 1),
 (5, 'aku suka nasi goreng', 13231, 0, '', 2, '2024-12-21 17:49:06', NULL, NULL, 2, '2024-12-21 17:50:30', 1),
 (6, 'aku anak indonesia', 19988, 0, '', 2, '2024-12-21 17:50:43', NULL, NULL, 2, '2024-12-21 17:53:53', 1),
@@ -63,11 +63,7 @@ INSERT INTO `buku` (`id`, `judul`, `tahun`, `id_penulis`, `nama_penulis`, `creat
 (15, 'aku seorang pilot', 12121, 0, '', 2, '2024-12-21 18:36:12', NULL, NULL, 2, '2024-12-21 18:36:15', 1),
 (16, 'Ganteng Ganteng Serigala', 1987, 0, '', 2, '2024-12-21 18:43:31', 2, '2024-12-21 18:43:38', 2, '2024-12-21 18:44:11', 1),
 (17, 'asede', 10230123, 0, '', 2, '2024-12-21 18:45:52', 2, '2024-12-21 18:46:03', 2, '2024-12-21 18:46:06', 1),
-(35, 'test', 2000, 3, 'Test', 2, '2025-01-12 06:57:19', NULL, NULL, NULL, NULL, 0),
-(36, 'test', 2000, 3, 'Test', 2, '2025-01-12 06:57:38', NULL, NULL, NULL, NULL, 0),
-(37, 'test', 2000, 3, 'Test', 2, '2025-01-12 06:58:30', NULL, NULL, NULL, NULL, 0),
-(38, 'test', 2000, 3, 'Test', 2, '2025-01-12 07:05:45', NULL, NULL, NULL, NULL, 0),
-(39, 'test', 2000, 3, 'Test', 2, '2025-01-12 07:08:43', NULL, NULL, NULL, NULL, 0);
+
 
 -- --------------------------------------------------------
 
