@@ -18,7 +18,7 @@ $bukus = $dbh->fetchAll(PDO::FETCH_ASSOC);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f4f6f9;
+            background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
             font-family: 'Arial', sans-serif;
         }
 
@@ -63,17 +63,17 @@ $bukus = $dbh->fetchAll(PDO::FETCH_ASSOC);
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="homepage.php">Home</a>
+    <a class="navbar-brand" href="tabel_buku.php">Buku</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Users</a>
+          <a class="nav-link active" aria-current="page" href="homepage.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="tabel_buku.php">Buku</a>
+          <a class="nav-link" href="#">Users</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Penulis</a>
@@ -83,7 +83,7 @@ $bukus = $dbh->fetchAll(PDO::FETCH_ASSOC);
   </div>
 </nav>
 <div class="mb-3">
-            <a href="input.php" class="btn btn-success"><i class="bi bi-plus-circle"></i> Tambah Data Buku</a>
+            <a href="input.php" class="btn btn-success ms-3 mt-3"><i class="bi bi-plus-circle"></i> Tambah Data Buku</a>
         </div>
 <div class="card">
             <div class="card-body">
@@ -91,10 +91,11 @@ $bukus = $dbh->fetchAll(PDO::FETCH_ASSOC);
                 <table class="table table-bordered table-striped text-center">
                     <thead class="table-dark">
                         <tr>
-                            <th>Id</th>
+                            <th>ID</th>
                             <th>Judul</th>
                             <th>Tahun Terbit</th>
-                            <th>Id Penulis</th>
+                            <th>ID Penulis</th>
+                            <th>Nama Penulis</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
@@ -105,7 +106,8 @@ $bukus = $dbh->fetchAll(PDO::FETCH_ASSOC);
                                 <td><?= $no; ?></td>
                                 <td><?= htmlspecialchars($row['judul']); ?></td>
                                 <td><?= htmlspecialchars($row['tahun']); ?></td>
-                                <td><?= htmlspecialchars($row['created_by']); ?></td>
+                                <td><?= htmlspecialchars($row['id_penulis']); ?></td>
+                                <td><?= htmlspecialchars($row['nama_penulis']); ?></td>
                                 <td>
                                     <a href="edit_buku.php?id=<?= $row['id']; ?>" class="btn btn-primary btn-sm"><i class="bi bi-pencil"></i> Edit</a>
                                     <a href="delete_buku.php?id=<?= $row['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')"><i class="bi bi-trash-fill"></i> Hapus</a>
