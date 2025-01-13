@@ -11,5 +11,5 @@ $stmt->bindParam(':email', $email);
 $stmt->bindParam(':password', $password);
 $stmt->execute();
 
-header("Location: tabel_user.php");
+header("Location: tabel_users.php");
 ?>
