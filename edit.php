@@ -38,8 +38,8 @@ if (!$buku) {
             <input type="text" name="judul" id="judul" class="form-control" value="<?php echo htmlspecialchars($buku['judul']); ?>" required>
         </div>
         <div class="mb-3">
-            <label for="penulis" class="form-label">Penulis:</label>
-            <input type="text" name="penulis" id="penulis" class="form-control" value="<?php echo htmlspecialchars($buku['nama_penulis']); ?>" required>
+            <label for="nama_penulis" class="form-label">Penulis:</label>
+            <input type="text" name="nama_penulis" id="nama_penulis" class="form-control" value="<?php echo htmlspecialchars($buku['nama_penulis']); ?>" required>
         </div>
         <button type="submit" class="btn btn-primary">Simpan</button>
         <a href="homepage.php" class="btn btn-secondary">Batal</a>

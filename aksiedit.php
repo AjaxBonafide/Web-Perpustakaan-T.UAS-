@@ -10,16 +10,16 @@ include "koneksi.php";
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $id = $_POST['id'];
     $judul = trim($_POST['judul']);
-    $penulis = trim($_POST['penulis']);
+    $nama_penulis = trim($_POST['nama_penulis']);
 
-    if (empty($id) || empty($judul) || empty($penulis)) {
+    if (empty($id) || empty($judul) || empty($nama_penulis)) {
         die("Semua kolom harus diisi.");
     }
 
     try {
-        $stmt = $koneksi->prepare("UPDATE buku SET judul = :judul, penulis = :penulis WHERE id = :id");
+        $stmt = $koneksi->prepare("UPDATE buku SET judul = :judul, nama_penulis = :nama_penulis WHERE id = :id");
         $stmt->bindParam(':judul', $judul);
-        $stmt->bindParam(':penulis', $penulis);
+        $stmt->bindParam(':nama_penulis', $nama_penulis);
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
 
         if ($stmt->execute()) {
