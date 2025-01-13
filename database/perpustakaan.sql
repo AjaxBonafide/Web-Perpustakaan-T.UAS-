@@ -73,6 +73,8 @@ CREATE TABLE `penulis` (
   `id` int(11) NOT NULL,
   `nama` varchar(255) NOT NULL,
   `id_buku` int(11) NOT NULL,
+  `deleted_by` int(11) DEFAULT NULL,
+  `deleted_at` datetime DEFAULT NULL,
   'isdel' tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

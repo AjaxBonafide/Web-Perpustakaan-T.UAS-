@@ -1,5 +1,11 @@
 <?php
 include "koneksi.php";
+session_start();
+
+if (!$_SESSION['isLoggedIn']) 
+    {
+        header("location: login.php");
+    }
 
 $username = $_POST['username'];
 $email = $_POST['email'];
