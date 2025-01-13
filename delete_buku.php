@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
     try {
         $stmt = $koneksi->prepare("UPDATE buku SET deleted_at = NOW(), deleted_by = :deleted_by, isdel = 1 WHERE id = :id AND deleted_at IS NULL");
         $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-        $stmt->bindParam(':deleted_by', $_SESSION['user_id'], PDO::PARAM_INT); // Asumsi ada sesi 'user_id'
+        $stmt->bindParam(':deleted_by', $_SESSION['user_id'], PDO::PARAM_INT);
 
         if ($stmt->execute()) {
             $_SESSION['success'] = "Data buku berhasil dihapus.";
@@ -30,13 +30,13 @@ if ($stmt->execute()) {
     echo "
     <script>
         alert('Data berhasil diperbarui!');
-        window.location.href = 'home.php';
+        window.location.href = 'homepage.php';
     </script>";
 } else {
     echo "
     <script>
         alert('Data gagal diperbarui!');
-        window.location.href = 'home.php';
+        window.location.href = 'homepage.php';
     </script>";
 }
 

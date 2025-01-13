@@ -80,10 +80,10 @@ $bukus = $dbh->fetchAll(PDO::FETCH_ASSOC);
           <a class="nav-link active" aria-current="page" href="homepage.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Users</a>
+          <a class="nav-link" href="tabel_users.php">Pengguna</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Penulis</a>
+          <a class="nav-link" href="tabel_penulis.php">Penulis</a>
         </li>
       </ul>
     </div>
@@ -91,7 +91,7 @@ $bukus = $dbh->fetchAll(PDO::FETCH_ASSOC);
 </nav>
 <div class="mb-3">
             <a href="input.php" class="btn btn-success ms-3 mt-3"><i class="bi bi-plus-circle"></i> Tambah Data Buku</a>
-        </div>
+</div>
 <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Daftar Buku</h5>

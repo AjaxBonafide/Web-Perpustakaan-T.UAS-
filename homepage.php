@@ -29,6 +29,9 @@ if (!isset($_SESSION['isLoggedIn'])) {
                         <a class="nav-link" href="tabel_penulis.php">Penulis</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="tabel_users.php">Pengguna</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link btn btn-logout text-white" href="logout.php">Logout</a>
                     </li>
                 </ul>
@@ -43,6 +46,7 @@ if (!isset($_SESSION['isLoggedIn'])) {
         <div class="welcome-btn">
             <a href="tabel_penulis.php" class="btn btn-warning btn-lg">Lihat Daftar Penulis</a>
             <a href="tabel_buku.php" class="btn btn-light btn-lg">Lihat Daftar Buku</a>
+            <a href="tabel_users.php" class="btn btn-light btn-lg">Lihat Daftar Pengguna</a>
         </div>
     </div>
 </body>

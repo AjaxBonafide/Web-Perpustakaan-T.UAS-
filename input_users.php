@@ -15,28 +15,24 @@ if (!$_SESSION['isLoggedIn']) {
 </head>
 <body>
     <div class="container">
-        <h2 class="mt-5">Tambah Data Buku</h2>
+        <h2 class="mt-5">Tambah Data Pengguna</h2>
         <p>Masukkan data buku baru di bawah ini:</p>
-        <form action="input_data.php" method="POST">
+        <form action="input_data_users.php" method="POST">
             <div class="mb-3">
-                <label for="judul" class="form-label">Judul Buku:</label>
-                <input type="text" class="form-control" name="judul" id="judul" required><br>
+                <label for="username" class="form-label">Usename:</label>
+                <input type="text" class="form-control" name="username" id="username" required><br>
             </div>
             <div class="mb-3">
-                <label for="tahun" class="form-label">Tahun Terbit:</label>
-                <input type="text" class="form-control" name="tahun" id="tahun" required><br>
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" class="form-control" name="email" id="email" required><br>
             </div>
             <div class="mb-3">
-                <label for="id_penulis" class="form-label">ID Penulis:</label>
-                <input type="int" class="form-control" name="id_penulis" id="id_penulis" required><br>
-            </div>
-            <div class="mb-3">
-                <label for="nama_penulis" class="form-label">Penulis:</label>
-                <input type="text" class="form-control" name="nama_penulis" id="nama_penulis" required><br>
+                <label for="password" class="form-label">Password:</label>
+                <input type="text" class="form-control" name="password" id="password" required><br>
             </div>
             <div class="mb-3">
                 <button type="submit" class="btn btn-success">Simpan Data</button>
-                <a href="tabel_buku.php" class="btn btn-secondary">Kembali</a>
+                <a href="tabel_users.php" class="btn btn-secondary">Kembali</a>
             </div>
         </form>
     </div>

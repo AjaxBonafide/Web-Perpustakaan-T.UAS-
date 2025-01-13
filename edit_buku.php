@@ -43,7 +43,7 @@ try {
                     <tr>
                         <td><?php echo htmlspecialchars($buku['id']); ?></td>
                         <td><?php echo htmlspecialchars($buku['judul']); ?></td>
-                        <td><?php echo htmlspecialchars($buku['penulis']); ?></td>
+                        <td><?php echo htmlspecialchars($buku['nama_penulis']); ?></td>
                         <td>
                             <a href="edit.php?id=<?php echo htmlspecialchars($buku['id']); ?>" class="btn btn-warning btn-sm">Edit</a>
                         </td>

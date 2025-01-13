@@ -1,83 +1,83 @@
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Jost', sans-serif;
-    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Jost", sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
 }
 
 .main {
-    width: 400px;
-    height: 500px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 5px 20px 50px #000;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 400px;
+  height: 500px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .login-container {
-    width: 100%;
-    padding: 20px;
+  width: 80%;
+  padding: 20px;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
-    font-size: 24px;
-    text-align: center;
-    color: #302b63;
-    margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #302b63;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 label {
-    display: block;
-    font-size: 14px;
-    color: #302b63;
-    margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+  color: #302b63;
+  margin-bottom: 5px;
 }
 
 input[type="email"],
 input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 input[type="email"]:focus,
 input[type="password"]:focus {
-    border-color: #302b63;
-    outline: none;
+  border-color: #302b63;
+  outline: none;
 }
 
 .btn {
-    width: 100%; /* Lebar penuh seperti input fields */
-    padding: 12px; /* Tambahkan sedikit padding untuk ukuran tombol */
-    background: #302b63;
-    color: white;
-    border: none;
-    border-radius: 8px; /* Tambahkan radius untuk tampilan lebih halus */
-    font-size: 18px; /* Perbesar teks agar lebih mudah dibaca */
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%; /* Lebar penuh seperti input fields */
+  padding: 12px; /* Tambahkan sedikit padding untuk ukuran tombol */
+  background: #302b63;
+  color: white;
+  border: none;
+  border-radius: 8px; /* Tambahkan radius untuk tampilan lebih halus */
+  font-size: 18px; /* Perbesar teks agar lebih mudah dibaca */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-    background: #24243e;
-    transform: scale(1.02); /* Sedikit efek zoom saat hover */
+  background: #24243e;
+  transform: scale(1.02); /* Sedikit efek zoom saat hover */
 }

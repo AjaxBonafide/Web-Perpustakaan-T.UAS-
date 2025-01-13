@@ -39,7 +39,7 @@ if (!$buku) {
         </div>
         <div class="mb-3">
             <label for="penulis" class="form-label">Penulis:</label>
-            <input type="text" name="penulis" id="penulis" class="form-control" value="<?php echo htmlspecialchars($buku['penulis']); ?>" required>
+            <input type="text" name="penulis" id="penulis" class="form-control" value="<?php echo htmlspecialchars($buku['nama_penulis']); ?>" required>
         </div>
         <button type="submit" class="btn btn-primary">Simpan</button>
         <a href="homepage.php" class="btn btn-secondary">Batal</a>
