@@ -7,7 +7,6 @@ if (!$_SESSION['isLoggedIn'])
         header("location: login.php");
     }
 
-date_default_timezone_set('Asia/Jakarta');
 $nama = $_POST['nama'];
 $id_buku = $_POST['id_buku'];
 
